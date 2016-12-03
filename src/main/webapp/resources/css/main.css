@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+
+table, td, th{
+	border:1px solid black;
+	padding:2px;
+}
+table {
+	text-align:center;	
+	margin:3px;
+	
+}
+
+.error {
+	color: red;	
+	font-size : 10px;
+}
+
+
+
