@@ -84,16 +84,18 @@ public class SubjectsController {
 			List<ObjectError> errors = bindingResult.getAllErrors();
 			for (ObjectError error : errors)
 				System.out.println(error.getDefaultMessage());
-			
+
 			return "registerform";
 		}
 
-		boolean success = subjectsService.register(subject);
+		else {
+			boolean success = subjectsService.register(subject);
 
-		if (success)
-			return "successinsert";
-		else
-			return "failinsert";
+			if (success)
+				return "successinsert";
+			else
+				return "failinsert";
+		}
 
 	}
 }

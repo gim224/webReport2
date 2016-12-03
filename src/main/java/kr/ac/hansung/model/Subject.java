@@ -16,8 +16,7 @@ public class Subject {
 	private String id;
 	@NotEmpty(message="Cannot be empty")
 	private String name;
-	@NotEmpty(message="Cannot be empty")
-	@Pattern(regexp="^(교필|일교|자율|전기|전선|전지|핵교A|핵교B)$",message="교필|일교|자율|전기|전선|전지|핵교A|핵교B 중 하나")
+	@NotEmpty(message="Cannot be empty")	
 	private String part;
 	//@NotNull(message="Grade Cannot be empty")
 	//@NumberFormat(style = Style.NUMBER)
